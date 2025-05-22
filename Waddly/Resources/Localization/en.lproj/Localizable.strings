@@ -1,0 +1,75 @@
+/* 
+  Localizable.strings
+  Waddly
+
+  Created by Mehmet Ali Bunsuz on 21.05.2025.
+  
+*/
+
+// MARK: - Login View
+"login.email" = "Email";
+"login.password" = "Password";
+"login.forgotPassword" = "Forgot Password";
+"login.loginButton" = "Log In";
+"login.or" = "or";
+"login.continueWithApple" = "Continue with Apple";
+"login.continueWithGoogle" = "Continue with Google";
+"login.noAccount" = "Don't have an account yet?";
+"login.signUp" = "Sign Up";
+"login.emailPlaceholder" = "hello@waddly.com";
+"login.passwordPlaceholder" = "password";
+
+// MARK: - Login Errors
+"login.error.emailEmpty" = "Email field cannot be empty.";
+"login.error.emailInvalid" = "Please enter a valid email address.";
+"login.error.passwordEmpty" = "Password field cannot be empty.";
+"login.error.passwordTooShort" = "Password must be at least 6 characters.";
+
+// MARK: - Login Alerts
+"login.alert.error" = "Error";
+"login.alert.success" = "Success";
+"login.alert.ok" = "OK";
+"login.alert.welcome" = "Welcome, %@";
+
+// MARK: - Register View
+"register.title" = "Register";
+"register.firstName" = "First Name";
+"register.lastName" = "Last Name";
+"register.email" = "Email";
+"register.phoneNumber" = "Phone Number";
+"register.password" = "Password";
+"register.confirmPassword" = "Confirm Password";
+"register.roleParent" = "Parent";
+"register.roleTeacher" = "Teacher";
+"register.termsCheckbox" = "I accept the terms and conditions";
+"register.privacyCheckbox" = "I accept the privacy policy";
+"register.registerButton" = "Register";
+"register.backButton" = "Back";
+
+// MARK: - Register Placeholders
+"register.firstNamePlaceholder" = "John";
+"register.lastNamePlaceholder" = "Doe";
+"register.emailPlaceholder" = "hello@waddly.com";
+"register.phoneNumberPlaceholder" = "+1 234 567 8900";
+"register.passwordPlaceholder" = "Enter password";
+"register.confirmPasswordPlaceholder" = "Confirm password";
+
+// MARK: - Register Errors
+"register.error.firstNameEmpty" = "First name cannot be empty.";
+"register.error.lastNameEmpty" = "Last name cannot be empty.";
+"register.error.emailEmpty" = "Email field cannot be empty.";
+"register.error.emailInvalid" = "Please enter a valid email address.";
+"register.error.phoneNumberEmpty" = "Phone number cannot be empty.";
+"register.error.phoneNumberInvalid" = "Please enter a valid phone number.";
+"register.error.passwordEmpty" = "Password field cannot be empty.";
+"register.error.passwordTooShort" = "Password must be at least 6 characters.";
+"register.error.passwordsDoNotMatch" = "Passwords do not match.";
+"register.error.termsNotAccepted" = "You must accept the terms and conditions.";
+"register.error.privacyNotAccepted" = "You must accept the privacy policy.";
+"register.error.roleNotSelected" = "Please select a role.";
+
+// MARK: - Register Alerts
+"register.alert.error" = "Error";
+"register.alert.success" = "Success";
+"register.alert.ok" = "OK";
+"register.alert.registerSuccess" = "Registration successful! You can now log in."; 

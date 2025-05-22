@@ -6,6 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		41EF02232DDDFD9F00367767 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02222DDDFD9F00367767 /* Swinject */; };
+		41EF02282DDDFDDC00367767 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02272DDDFDDC00367767 /* RxSwift */; };
+		41EF022B2DDDFDF400367767 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF022A2DDDFDF400367767 /* SnapKit */; };
+		41EF02372DDE03C000367767 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02362DDE03C000367767 /* Toast */; };
+		41EF023A2DDE06C700367767 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02392DDE06C700367767 /* FirebaseAnalytics */; };
+		41EF023C2DDE06C700367767 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF023B2DDE06C700367767 /* FirebaseAppCheck */; };
+		41EF023E2DDE06C700367767 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF023D2DDE06C700367767 /* FirebaseAuth */; };
+		41EF02402DDE06C700367767 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF023F2DDE06C700367767 /* FirebaseCore */; };
+		41EF02422DDE06C700367767 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02412DDE06C700367767 /* FirebaseCrashlytics */; };
+		41EF02442DDE06C700367767 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02432DDE06C700367767 /* FirebaseDatabase */; };
+		41EF02462DDE06C700367767 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02452DDE06C700367767 /* FirebaseFirestore */; };
+		41EF02482DDE06C700367767 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02472DDE06C700367767 /* FirebaseInAppMessaging-Beta */; };
+		41EF024A2DDE06C700367767 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02492DDE06C700367767 /* FirebaseMessaging */; };
+		41EF024C2DDE06C700367767 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF024B2DDE06C700367767 /* FirebasePerformance */; };
+		41EF024E2DDE06C700367767 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF024D2DDE06C700367767 /* FirebaseRemoteConfig */; };
+		41EF02502DDE06C700367767 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF024F2DDE06C700367767 /* FirebaseStorage */; };
+		41EF02572DDE07FE00367767 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02562DDE07FE00367767 /* RealmSwift */; };
+		41EF02582DDE07FE00367767 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02562DDE07FE00367767 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41EF02592DDE07FE00367767 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41EF02582DDE07FE00367767 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		41EF02092DDDFCF000367767 /* Waddly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waddly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,7 +49,7 @@
 		41EF021B2DDDFCF100367767 /* Exceptions for "Waddly" folder in "Waddly" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Application/Info.plist,
 			);
 			target = 41EF02082DDDFCF000367767 /* Waddly */;
 		};
@@ -36,6 +71,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EF02482DDE06C700367767 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				41EF024C2DDE06C700367767 /* FirebasePerformance in Frameworks */,
+				41EF024A2DDE06C700367767 /* FirebaseMessaging in Frameworks */,
+				41EF02282DDDFDDC00367767 /* RxSwift in Frameworks */,
+				41EF023A2DDE06C700367767 /* FirebaseAnalytics in Frameworks */,
+				41EF022B2DDDFDF400367767 /* SnapKit in Frameworks */,
+				41EF024E2DDE06C700367767 /* FirebaseRemoteConfig in Frameworks */,
+				41EF023C2DDE06C700367767 /* FirebaseAppCheck in Frameworks */,
+				41EF02462DDE06C700367767 /* FirebaseFirestore in Frameworks */,
+				41EF02372DDE03C000367767 /* Toast in Frameworks */,
+				41EF02232DDDFD9F00367767 /* Swinject in Frameworks */,
+				41EF02572DDE07FE00367767 /* RealmSwift in Frameworks */,
+				41EF02502DDE06C700367767 /* FirebaseStorage in Frameworks */,
+				41EF02422DDE06C700367767 /* FirebaseCrashlytics in Frameworks */,
+				41EF02442DDE06C700367767 /* FirebaseDatabase in Frameworks */,
+				41EF02402DDE06C700367767 /* FirebaseCore in Frameworks */,
+				41EF023E2DDE06C700367767 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				41EF020B2DDDFCF000367767 /* Waddly */,
+				41EF02552DDE07FE00367767 /* Frameworks */,
 				41EF020A2DDDFCF000367767 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +111,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		41EF02552DDE07FE00367767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,6 +128,8 @@
 				41EF02052DDDFCF000367767 /* Sources */,
 				41EF02062DDDFCF000367767 /* Frameworks */,
 				41EF02072DDDFCF000367767 /* Resources */,
+				41EF022C2DDDFE6100367767 /* SwiftLint */,
+				41EF02592DDE07FE00367767 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -78,6 +140,23 @@
 			);
 			name = Waddly;
 			packageProductDependencies = (
+				41EF02222DDDFD9F00367767 /* Swinject */,
+				41EF02272DDDFDDC00367767 /* RxSwift */,
+				41EF022A2DDDFDF400367767 /* SnapKit */,
+				41EF02362DDE03C000367767 /* Toast */,
+				41EF02392DDE06C700367767 /* FirebaseAnalytics */,
+				41EF023B2DDE06C700367767 /* FirebaseAppCheck */,
+				41EF023D2DDE06C700367767 /* FirebaseAuth */,
+				41EF023F2DDE06C700367767 /* FirebaseCore */,
+				41EF02412DDE06C700367767 /* FirebaseCrashlytics */,
+				41EF02432DDE06C700367767 /* FirebaseDatabase */,
+				41EF02452DDE06C700367767 /* FirebaseFirestore */,
+				41EF02472DDE06C700367767 /* FirebaseInAppMessaging-Beta */,
+				41EF02492DDE06C700367767 /* FirebaseMessaging */,
+				41EF024B2DDE06C700367767 /* FirebasePerformance */,
+				41EF024D2DDE06C700367767 /* FirebaseRemoteConfig */,
+				41EF024F2DDE06C700367767 /* FirebaseStorage */,
+				41EF02562DDE07FE00367767 /* RealmSwift */,
 			);
 			productName = Waddly;
 			productReference = 41EF02092DDDFCF000367767 /* Waddly.app */;
@@ -104,9 +183,18 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 41EF02002DDDFCF000367767;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				41EF02212DDDFD9F00367767 /* XCRemoteSwiftPackageReference "Swinject" */,
+				41EF02262DDDFDDC00367767 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				41EF02292DDDFDF400367767 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				41EF02302DDE015C00367767 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				41EF02352DDE03C000367767 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 41EF020A2DDDFCF000367767 /* Products */;
 			projectDirPath = "";
@@ -126,6 +214,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41EF022C2DDDFE6100367767 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41EF02052DDDFCF000367767 /* Sources */ = {
@@ -147,12 +256,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WPPF9Y8987;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Waddly/Info.plist;
+				INFOPLIST_FILE = Waddly/Application/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waddly;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -175,12 +286,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WPPF9Y8987;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Waddly/Info.plist;
+				INFOPLIST_FILE = Waddly/Application/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waddly;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -246,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -303,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -335,6 +448,145 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41EF02212DDDFD9F00367767 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		41EF02262DDDFDDC00367767 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		41EF02292DDDFDF400367767 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		41EF02302DDE015C00367767 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		41EF02352DDE03C000367767 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41EF02222DDDFD9F00367767 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02212DDDFD9F00367767 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		41EF02272DDDFDDC00367767 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02262DDDFDDC00367767 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		41EF022A2DDDFDF400367767 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02292DDDFDF400367767 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		41EF02362DDE03C000367767 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02352DDE03C000367767 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		41EF02392DDE06C700367767 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		41EF023B2DDE06C700367767 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		41EF023D2DDE06C700367767 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		41EF023F2DDE06C700367767 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		41EF02412DDE06C700367767 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		41EF02432DDE06C700367767 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		41EF02452DDE06C700367767 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		41EF02472DDE06C700367767 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		41EF02492DDE06C700367767 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		41EF024B2DDE06C700367767 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		41EF024D2DDE06C700367767 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		41EF024F2DDE06C700367767 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		41EF02562DDE07FE00367767 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41EF02302DDE015C00367767 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41EF02012DDDFCF000367767 /* Project object */;
 }

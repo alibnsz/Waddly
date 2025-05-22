@@ -1,0 +1,100 @@
+# swiftlint.yaml for Waddle iOS App (VIPER + UIKit)
+
+# Genel ayarlar
+disabled_rules:
+  - trailing_whitespace
+  - line_length # Uzun satır bazı durumlarda kaçınılmaz olabilir, opsiyonel kapatılabilir
+  - force_cast # VIPER'de bazen zorunlu casting olur, ihtiyaca göre kapatılabilir
+  - force_try # Eğer hata yönetimi explicit ise kapatılabilir
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - force_unwrapping
+  - literal_expression_end_indentation
+  - missing_docs # Projede dokümantasyon önemli ise açılabilir
+  - prefer_self_in_static_references
+  - redundant_nil_coalescing
+  - sorted_imports
+  - unused_closure_parameter
+  - vertical_parameter_alignment
+
+# Stil kuralları
+line_length:
+  warning: 120
+  error: 150
+
+identifier_name:
+  min_length: 3
+  max_length: 40
+  excluded:
+    - id
+    - URL
+    - UI
+    - ID
+    - x
+    - y
+    - z
+
+type_name:
+  min_length: 3
+  max_length: 40
+
+file_length:
+  warning: 400
+  error: 600
+
+function_body_length:
+  warning: 40
+  error: 80
+
+type_body_length:
+  warning: 300
+  error: 500
+
+# Naming conventions
+variable_name:
+  min_length: 3
+  max_length: 40
+  validates_start_with_lowercase: true
+
+function_parameter_count:
+  warning: 5
+  error: 8
+
+# VIPER ve UIKit ile yazılan projelerde önemli kurallar
+force_unwrapping:
+  severity: warning # mümkün olduğunca force unwrap kullanma, uyarı olarak bırak
+
+force_cast:
+  severity: warning # zorunluysa uyarı, direkt error yapma
+
+# Boş satır düzeni
+empty_line_between_groups:
+  enabled: true
+
+# Diğer faydalı kurallar
+opening_brace:
+  # Kısa fonksiyonlarda açılış parantezi aynı satırda
+  severity: warning
+  always_on_same_line: true
+
+trailing_comma:
+  severity: warning
+
+# import sıralaması
+sorted_imports:
+  severity: warning
+
+# Ekstra
+nesting:
+  type_level_warning: 3
+  type_level_error: 5
+
+# Ignore klasör veya dosya (genelde generated code veya Pods)
+excluded:
+  - Carthage
+  - Pods
+  - Generated
+  - Assets.xcassets

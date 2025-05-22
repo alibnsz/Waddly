@@ -1,0 +1,75 @@
+/* 
+  Localizable.strings
+  Waddly
+
+  Created by Mehmet Ali Bunsuz on 21.05.2025.
+  
+*/
+
+// MARK: - Login View
+"login.email" = "E-posta";
+"login.password" = "Şifre";
+"login.forgotPassword" = "Şifremi Unuttum";
+"login.loginButton" = "Giriş Yap";
+"login.or" = "veya";
+"login.continueWithApple" = "Apple ile devam et";
+"login.continueWithGoogle" = "Google ile devam et";
+"login.noAccount" = "Henüz bir hesabın yok mu?";
+"login.signUp" = "Kayıt Ol";
+"login.emailPlaceholder" = "merhaba@waddly.com";
+"login.passwordPlaceholder" = "şifre";
+
+// MARK: - Login Errors
+"login.error.emailEmpty" = "E-posta alanı boş bırakılamaz.";
+"login.error.emailInvalid" = "Geçerli bir e-posta adresi girin.";
+"login.error.passwordEmpty" = "Şifre alanı boş bırakılamaz.";
+"login.error.passwordTooShort" = "Şifre en az 6 karakter olmalıdır.";
+
+// MARK: - Login Alerts
+"login.alert.error" = "Hata";
+"login.alert.success" = "Başarılı";
+"login.alert.ok" = "Tamam";
+"login.alert.welcome" = "Hoş geldiniz, %@";
+
+// MARK: - Register View
+"register.title" = "Kayıt Ol";
+"register.firstName" = "Ad";
+"register.lastName" = "Soyad";
+"register.email" = "E-mail";
+"register.phoneNumber" = "Telefon";
+"register.password" = "Şifre";
+"register.confirmPassword" = "Şifre Tekrar";
+"register.roleParent" = "Veli";
+"register.roleTeacher" = "Öğretmen";
+"register.termsCheckbox" = "Hüküm ve koşulları kabul ediyorum";
+"register.privacyCheckbox" = "Gizlilik politikasını kabul ediyorum";
+"register.registerButton" = "Kayıt Ol";
+"register.backButton" = "Geri";
+
+// MARK: - Register Placeholders
+"register.firstNamePlaceholder" = "Mehmet Ali";
+"register.lastNamePlaceholder" = "Bunsuz";
+"register.emailPlaceholder" = "merhaba@waddly.com";
+"register.phoneNumberPlaceholder" = "+90 555 123 4567";
+"register.passwordPlaceholder" = "Şifre";
+"register.confirmPasswordPlaceholder" = "Şifre Tekrar";
+
+// MARK: - Register Errors
+"register.error.firstNameEmpty" = "Ad alanı boş bırakılamaz.";
+"register.error.lastNameEmpty" = "Soyad alanı boş bırakılamaz.";
+"register.error.emailEmpty" = "E-posta alanı boş bırakılamaz.";
+"register.error.emailInvalid" = "Geçerli bir e-posta adresi girin.";
+"register.error.phoneNumberEmpty" = "Telefon numarası boş bırakılamaz.";
+"register.error.phoneNumberInvalid" = "Geçerli bir telefon numarası girin.";
+"register.error.passwordEmpty" = "Şifre alanı boş bırakılamaz.";
+"register.error.passwordTooShort" = "Şifre en az 6 karakter olmalıdır.";
+"register.error.passwordsDoNotMatch" = "Şifreler eşleşmiyor.";
+"register.error.termsNotAccepted" = "Şartları kabul etmelisiniz.";
+"register.error.privacyNotAccepted" = "Gizlilik politikasını kabul etmelisiniz.";
+"register.error.roleNotSelected" = "Lütfen bir rol seçin.";
+
+// MARK: - Register Alerts
+"register.alert.error" = "Hata";
+"register.alert.success" = "Başarılı";
+"register.alert.ok" = "Tamam";
+"register.alert.registerSuccess" = "Kayıt başarılı! Şimdi giriş yapabilirsiniz."; 
