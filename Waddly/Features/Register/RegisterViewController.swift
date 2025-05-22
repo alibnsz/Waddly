@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftMessages
 
 final class RegisterViewController: UIViewController, NavigationView {
     
@@ -103,9 +104,23 @@ extension RegisterViewController: PresenterToViewRegisterProtocol {
     }
     
     func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: StringPaths.Register.Alert.ok.localized, style: .default))
-        present(alert, animated: true)
+        // Toast mesajı gösterimi
+        let theme: Theme = title == StringPaths.Register.Alert.success.localized ? .success : .error
+        
+        let view = MessageView.viewFromNib(layout: .cardView)
+        view.configureTheme(theme)
+        view.configureContent(title: title, body: message)
+        view.button?.isHidden = true
+        view.titleLabel?.textAlignment = .center
+        view.bodyLabel?.textAlignment = .center
+        
+        var config = SwiftMessages.Config()
+        config.presentationStyle = .bottom
+        config.duration = .seconds(seconds: theme == .success ? 2 : 3)
+        config.dimMode = theme == .success ? .none : .gray(interactive: true)
+        config.interactiveHide = true
+        
+        SwiftMessages.show(config: config, view: view)
     }
     
     func clearForm() {

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411304252DDF31FB00C847C9 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 411304242DDF31FB00C847C9 /* SwiftMessages */; };
 		41EF02232DDDFD9F00367767 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02222DDDFD9F00367767 /* Swinject */; };
 		41EF02282DDDFDDC00367767 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02272DDDFDDC00367767 /* RxSwift */; };
 		41EF022B2DDDFDF400367767 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF022A2DDDFDF400367767 /* SnapKit */; };
-		41EF02372DDE03C000367767 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02362DDE03C000367767 /* Toast */; };
 		41EF023A2DDE06C700367767 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF02392DDE06C700367767 /* FirebaseAnalytics */; };
 		41EF023C2DDE06C700367767 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF023B2DDE06C700367767 /* FirebaseAppCheck */; };
 		41EF023E2DDE06C700367767 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 41EF023D2DDE06C700367767 /* FirebaseAuth */; };
@@ -80,7 +80,7 @@
 				41EF024E2DDE06C700367767 /* FirebaseRemoteConfig in Frameworks */,
 				41EF023C2DDE06C700367767 /* FirebaseAppCheck in Frameworks */,
 				41EF02462DDE06C700367767 /* FirebaseFirestore in Frameworks */,
-				41EF02372DDE03C000367767 /* Toast in Frameworks */,
+				411304252DDF31FB00C847C9 /* SwiftMessages in Frameworks */,
 				41EF02232DDDFD9F00367767 /* Swinject in Frameworks */,
 				41EF02572DDE07FE00367767 /* RealmSwift in Frameworks */,
 				41EF02502DDE06C700367767 /* FirebaseStorage in Frameworks */,
@@ -143,7 +143,6 @@
 				41EF02222DDDFD9F00367767 /* Swinject */,
 				41EF02272DDDFDDC00367767 /* RxSwift */,
 				41EF022A2DDDFDF400367767 /* SnapKit */,
-				41EF02362DDE03C000367767 /* Toast */,
 				41EF02392DDE06C700367767 /* FirebaseAnalytics */,
 				41EF023B2DDE06C700367767 /* FirebaseAppCheck */,
 				41EF023D2DDE06C700367767 /* FirebaseAuth */,
@@ -157,6 +156,7 @@
 				41EF024D2DDE06C700367767 /* FirebaseRemoteConfig */,
 				41EF024F2DDE06C700367767 /* FirebaseStorage */,
 				41EF02562DDE07FE00367767 /* RealmSwift */,
+				411304242DDF31FB00C847C9 /* SwiftMessages */,
 			);
 			productName = Waddly;
 			productReference = 41EF02092DDDFCF000367767 /* Waddly.app */;
@@ -192,8 +192,8 @@
 				41EF02262DDDFDDC00367767 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				41EF02292DDDFDF400367767 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				41EF02302DDE015C00367767 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				41EF02352DDE03C000367767 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				411304232DDF31FB00C847C9 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 41EF020A2DDDFCF000367767 /* Products */;
@@ -450,6 +450,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		411304232DDF31FB00C847C9 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.1;
+			};
+		};
 		41EF02212DDDFD9F00367767 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
@@ -482,14 +490,6 @@
 				kind = branch;
 			};
 		};
-		41EF02352DDE03C000367767 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scalessec/Toast-Swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
 		41EF02382DDE06C700367767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -501,6 +501,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		411304242DDF31FB00C847C9 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 411304232DDF31FB00C847C9 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
 		41EF02222DDDFD9F00367767 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 41EF02212DDDFD9F00367767 /* XCRemoteSwiftPackageReference "Swinject" */;
@@ -515,11 +520,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 41EF02292DDDFDF400367767 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		41EF02362DDE03C000367767 /* Toast */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41EF02352DDE03C000367767 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
 		};
 		41EF02392DDE06C700367767 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

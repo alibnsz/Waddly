@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Foundation // StringPaths için
+import Foundation
+import SwiftMessages
 
 final class LoginViewController: UIViewController, NavigationView {
     
@@ -81,9 +82,21 @@ extension LoginViewController: PresenterToViewLoginProtocol {
     }
     
     func showError(message: String) {
-        let alert = UIAlertController(title: StringPaths.Login.Alert.error.localized, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: StringPaths.Login.Alert.ok.localized, style: .default))
-        present(alert, animated: true)
+        // Toast mesajı ile hata gösterimi
+        let view = MessageView.viewFromNib(layout: .cardView)
+        view.configureTheme(.error)
+        view.configureContent(title: StringPaths.Login.Alert.error.localized, body: message)
+        view.button?.isHidden = true
+        view.titleLabel?.textAlignment = .center
+        view.bodyLabel?.textAlignment = .center
+        
+        var config = SwiftMessages.Config()
+        config.presentationStyle = .bottom
+        config.duration = .seconds(seconds: 3)
+        config.dimMode = .gray(interactive: true)
+        config.interactiveHide = true
+        
+        SwiftMessages.show(config: config, view: view)
     }
     
     func navigateToHome(user: User) {
@@ -92,9 +105,21 @@ extension LoginViewController: PresenterToViewLoginProtocol {
     }
     
     func showLoginSuccess(message: String) {
-        let alert = UIAlertController(title: StringPaths.Login.Alert.success.localized, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: StringPaths.Login.Alert.ok.localized, style: .default))
-        present(alert, animated: true)
+        // Toast mesajı ile başarılı giriş gösterimi
+        let view = MessageView.viewFromNib(layout: .cardView)
+        view.configureTheme(.success)
+        view.configureContent(title: StringPaths.Login.Alert.success.localized, body: message)
+        view.button?.isHidden = true
+        view.titleLabel?.textAlignment = .center
+        view.bodyLabel?.textAlignment = .center
+        
+        var config = SwiftMessages.Config()
+        config.presentationStyle = .bottom
+        config.duration = .seconds(seconds: 2)
+        config.dimMode = .none
+        config.interactiveHide = true
+        
+        SwiftMessages.show(config: config, view: view)
     }
     
     func clearFields() {
